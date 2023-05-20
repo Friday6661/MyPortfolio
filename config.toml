@@ -36,8 +36,6 @@ enableRobotsTXT = true
   background_color_class = "bg-black"
   recent_posts_number = 3
 
-[params]
-  commentoEnable = true
 
 [[params.ananke_socials]]
 name = "twitter"
