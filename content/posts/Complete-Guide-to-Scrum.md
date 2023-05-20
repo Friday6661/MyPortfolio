@@ -5,4 +5,4 @@ draft: true
 ---
 ## Coba post
 
-![1684586417432](image/Complete-Guide-to-Scrum/1684586417432.png)
+![scrum-process](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7-mleOTOukBLFojZQ_-erjcpv_8E4CVMVGap6DbWTnQ&s "Scrum Process")
