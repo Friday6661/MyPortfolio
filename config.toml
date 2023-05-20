@@ -1,4 +1,4 @@
 baseURL = 'http://fridaydev.id'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'FridayDev'
 theme = 'ananke'
