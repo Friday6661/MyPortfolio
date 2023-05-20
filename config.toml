@@ -1,33 +1,81 @@
-baseURL = 'http://fridaydev.id'
-defaultContentLanguage = "en"
-title = 'FridayDev'
-theme = 'hugo-theme-itheme'
+baseURL = "https://fridaydev.id"
+canonifyURLs=true
+pluralizeListTitles = false
+summaryLength   = 25
+
+theme         = "BlogRa"
+languageCode  = "en-us"
+title         = "FridayDev"
+
+disqusShortname = ""
 
 [params]
-  defaultCover = 'https://example.com/cover.jpg' # default cover image for post not setting cover
-  email = 'floyd.li@outlook.com' # the email address display in the footer
-  [params.algolia] # Algolia search configuration
-    enabled = true # enable Algolia search
-    appId = 'YOUR_KEY' # appid for Algolia search
-    appKey = 'YOUR_APP_KEY' # appkey for Algolia search
-    searchIndex = 'YOUR_INDEX' # index for Algolia search
-  [[params.css]] # custom css stylesheet, you can add one or more, url is relative in 'static' folder
-    url = 'css1.css'
-  [[params.css]]
-    url = 'css2.css'
-  [[params.js]] # custom javascript, you can add one or more, url is relative in 'static' folder
-    url = 'js1.js'
-  [[params.js]]
-    url = 'js2.js'
-  [[params.socialMedia]] # custom social links display in the footer, you can add one or more
-    name = 'Github'
-    url = 'https://github.com/floyd-li'
-  [[params.socialMedia]]
-    name = 'Twitter'
-    url = 'https://twitter.com/some-one'
-  [[params.blogroll]] # blogroll links display in the footer, you can add one or more
-    name = 'Apple'
-    url = 'https://Apple.com/'
-  [[params.blogroll]]
-    name = 'Google'
-    url = 'https://Google.com/'
+    description     = "The Ultimate Tech Blogging Theme"
+    contactEmail    = "your-email@domain.com"
+    footer          = ""
+    googleSearch    = "google-cse-key"
+    googleAnalytics = ""      # Google Analytics v4
+    adsense         = "adsense-key"
+    math            = false   # best to enable this in the front matter of a page
+    mermaid         = false   # best to enable this in the front matter of a page
+
+    # Social Media Params
+    facebook   = ""
+    twitter    = ""
+    youtube    = ""
+    instagram  = ""
+    github     = ""
+    pinterest  = ""
+    linkedin   = ""
+
+
+# Configure the site menu here
+[menu]
+    [[menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
+
+    [[menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        weight = 2
+            [[menu.main]]
+                parent = "blog"
+                name = "Posts"
+                url = "/posts/"
+                weight = 1
+            [[menu.main]]
+                parent = "blog"
+                name = "Sections"
+                url = "/sections/"
+                weight = 2
+            [[menu.main]]
+                parent = "blog"
+                name = "divider"
+                weight = 3
+            [[menu.main]]
+                parent = "blog"
+                name = "Tags"
+                url = "/tags/"
+                weight = 4
+    [[menu.main]]
+        name = "About"
+        url = "/about/"
+        weight = 3
+    [[menu.main]]
+        name = "Contact"
+        url = "/contact/"
+        weight = 4
+
+[markup.goldmark.parser.attribute]
+    block = true
+
+# Don't touch this
+[markup.goldmark.renderer]
+    unsafe = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.102.3"
