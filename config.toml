@@ -12,7 +12,7 @@ disqusShortname = ""
 [params]
     description     = "The Ultimate Tech Blogging Theme"
     contactEmail    = "your-email@domain.com"
-    footer          = ""
+    footer          = "FridayDev"
     googleSearch    = "google-cse-key"
     googleAnalytics = ""      # Google Analytics v4
     adsense         = "adsense-key"
